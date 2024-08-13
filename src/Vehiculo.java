@@ -3,6 +3,16 @@ public abstract class Vehiculo {
     private String numRuedas;
     private String color;
 
+
+    public Vehiculo(){
+        
+    }
+    public Vehiculo(String modelo, String numRuedas, String color) {
+        this.modelo = modelo;
+        this.numRuedas = numRuedas;
+        this.color = color;
+    }
+
     public void arrancar(){
         System.out.println("El vehículo ha arrancado");
     }
